@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="ink">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>r. sreesaran — developer &amp; student</title>
+  <meta name="description"
+    content="r. sreesaran is a developer and BCA student in bangalore, building tools, linux configs, and backend systems." />
+  <meta property="og:title" content="r. sreesaran — developer &amp; student" />
+  <meta property="og:description" content="developer. student. linux user. building things that make sense." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/images/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-name">sreesaran</a>
+    <span class="nav-clock mono" id="nav-clock"></span>
+    <div class="nav-links">
+      <a href="#about" id="nav-about">about</a>
+      <a href="#projects" id="nav-projects">projects</a>
+      <a href="#skills" id="nav-skills">skills</a>
+      <a href="#interests" id="nav-interests">interests</a>
+      <a href="#certs" id="nav-certs">certs</a>
+      <a href="#contact" id="nav-contact">contact</a>
+    </div>
+    <div class="theme-controls">
+      <div class="scheme-dots" aria-label="Color scheme selector">
+        <button class="scheme-dot" data-theme="void" title="Void — dark mono" style="background:#F0F0F0"></button>
+        <button class="scheme-dot" data-theme="signal" title="Signal — dark red" style="background:#FF3040"></button>
+        <span class="dot-sep"></span>
+        <button class="scheme-dot" data-theme="paper" title="Paper — light mono"
+          style="background:#1A1A1A; border-color:#D0D0D0"></button>
+        <button class="scheme-dot active" data-theme="ink" title="Ink — light red" style="background:#CC0000"></button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Introduction">
+
+      <!-- BANNER -->
+      <div class="hero-banner" aria-hidden="true">
+        <span class="hero-banner-initials">r.sreesaran</span>
+        <span class="hero-banner-label mono">developer · bangalore · 30/11/2026</span>
+      </div>
+
+      <div class="hero-tag mono">● available for opportunities</div>
+      <h1 class="hero-name">r. sreesaran</h1>
+      <p class="hero-role">developer · student · linux user</p>
+      <p class="hero-quote mono">"the unexamined code is not worth running."</p>
+      <p class="hero-bio">
+        building tools that make sense. bca (data analytics) student at jain university, bangalore.
+        interested in systems, open source, and things that run quietly and well.
+      </p>
+      <div class="hero-meta mono">bangalore, india · bca 2024–2028</div>
+      <div class="hero-actions">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saransree119@gmail.com&su=Hey Sreesaran"
+          class="btn-primary" id="hero-email" target="_blank" rel="noopener">get in touch</a>
+        <a href="https://github.com/sharanfr" class="btn-ghost" id="hero-github" target="_blank" rel="noopener">github ↗</a>
+        <a href="assets/docs/resume.pdf" class="btn-ghost" id="hero-resume" download>resume ↓</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <span class="section-label mono">01 — about</span>
+      <div class="section-body">
+        <p>
+          i'm sreesaran — a developer, student, and perpetual learner from bangalore. i work across python, c, c++, and
+          bash,
+          and i've spent the last year going deep on linux: building configs, writing scripts, understanding systems
+          from scratch.
+        </p>
+        <p>
+          i'm interested in software and a bit of hardware too — arduino, raspberry pi, robotics. i attended
+          a drone technology workshop hosted by IIT Tirupati at Jain University which deepened my curiosity for embedded
+          systems, UAV mechanics, and the intersection of software with the physical world. i like problems that sit
+          at the boundary of the physical and the digital.
+        </p>
+        <p>
+          currently: bca data analytics at jain university. always open to new directions. iterating towards a better
+          version of self.
+        </p>
+        <p>
+          lately i've been going deep into dbms — databases, query optimization, schema design. it's become the thing
+          i keep coming back to. actively learning and building around it.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Projects">
+      <span class="section-label mono">02 — projects</span>
+      <div class="section-body">
+        <p class="section-intro">things i have built or contributed to.</p>
+        <div class="project-list">
+
+          <!-- Monarch-Sway -->
+          <div class="project-item" id="project-monarch">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-name">Monarch-Sway</span>
+                <span class="project-tag mono">open source</span>
+              </div>
+              <a href="https://github.com/sharanfr/Monarch-Sway" class="project-link" target="_blank" rel="noopener"
+                id="link-monarch">↗</a>
+            </div>
+            <p class="project-desc">↳ a clean, modular swaywm desktop built for productivity and wayland workflows.</p>
+            <p class="project-detail">
+              material expressive 3 × omarchy-inspired configuration — keyboard-first, fast, and consistent.
+              ships with custom waybar, wofi, mako, swaylock, and foot setups. built for ubuntu 24.04 lts on wayland.
+            </p>
+            <div class="project-stack">
+              <span class="tag mono"><i class="bi bi-terminal"></i> bash</span>
+              <span class="tag mono"><i class="bi bi-window-stack"></i> sway</span>
+              <span class="tag mono"><i class="bi bi-layout-three-columns"></i> waybar</span>
+              <span class="tag mono"><i class="bi bi-terminal-fill"></i> linux</span>
+              <span class="tag mono"><i class="bi bi-display"></i> wayland</span>
+            </div>
+          </div>
+
+          <!-- IDK -->
+          <div class="project-item" id="project-idk">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-name">idk</span>
+                <span class="project-tag mono">collaborator — backend</span>
+              </div>
+              <a href="https://github.com/Harinandan-K/idk" class="project-link" target="_blank" rel="noopener"
+                id="link-idk">↗</a>
+            </div>
+            <p class="project-desc">↳ a TUI for annotating linux man page commands with personal descriptions.
+            </p>
+            <p class="project-detail">
+              reads commands from the linux manual (man) and presents them in a terminal interface — users can
+              add their own plain-language descriptions and export them to a reference file. built to help newcomers
+              document commands they encounter while learning linux. i handle the backend logic and data layer.
+              currently on hold.
+            </p>
+            <div class="project-stack">
+              <span class="tag mono"><i class="bi bi-filetype-py"></i> python</span>
+              <span class="tag mono"><i class="bi bi-terminal-fill"></i> linux</span>
+              <span class="tag mono"><i class="bi bi-window"></i> gui</span>
+              <span class="tag mono"><i class="bi bi-server"></i> backend</span>
+            </div>
+          </div>
+
+          <!-- e-Yantra -->
+          <div class="project-item" id="project-eyantra">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-name">e-Yantra Robotics Hackathon</span>
+                <span class="project-tag mono">2025</span>
+              </div>
+            </div>
+            <p class="project-desc">↳ line-following robot built under c and python, trained in coppeliasim.</p>
+            <p class="project-detail">
+              wrote the control code for a line-following robot, tested and iterated using coppeliasim simulation.
+              experimented with different training approaches including reinforcement-inspired learning (ril).
+            </p>
+            <div class="project-stack">
+              <span class="tag mono"><i class="bi bi-braces"></i> c</span>
+              <span class="tag mono"><i class="bi bi-filetype-py"></i> python</span>
+              <span class="tag mono"><i class="bi bi-cpu"></i> robotics</span>
+              <span class="tag mono"><i class="bi bi-gear"></i> coppeliasim</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <span class="section-label mono">03 — stack</span>
+      <div class="section-body">
+        <p class="section-intro">what i work with.</p>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <span class="skill-group-label mono">languages</span>
+            <div class="skill-tags">
+              <span class="tag mono"><i class="bi bi-filetype-py"></i> python</span>
+              <span class="tag mono"><i class="bi bi-braces"></i> c</span>
+              <span class="tag mono"><i class="bi bi-braces-asterisk"></i> c++</span>
+              <span class="tag mono"><i class="bi bi-terminal"></i> bash</span>
+              <span class="tag mono"><i class="bi bi-database"></i> sql</span>
+              <span class="tag mono learning"><i class="bi bi-database-fill-gear"></i> dbms <span
+                  class="learning-badge mono">learning</span></span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-label mono">tools &amp; systems</span>
+            <div class="skill-tags">
+              <span class="tag mono"><i class="bi bi-git"></i> git</span>
+              <span class="tag mono"><i class="bi bi-github"></i> github</span>
+              <span class="tag mono"><i class="bi bi-terminal-fill"></i> linux</span>
+              <span class="tag mono"><i class="bi bi-window-stack"></i> swaywm</span>
+              <span class="tag mono"><i class="bi bi-keyboard"></i> vim</span>
+              <span class="tag mono"><i class="bi bi-lightning-charge"></i> arduino</span>
+              <span class="tag mono"><i class="bi bi-cpu-fill"></i> raspberry pi</span>
+              <span class="tag mono"><i class="bi bi-diagram-2"></i> i2c / spi</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-label mono">other</span>
+            <div class="skill-tags">
+              <span class="tag mono"><i class="bi bi-microsoft"></i> microsoft office</span>
+              <span class="tag mono"><i class="bi bi-robot"></i> generative ai</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-label mono">environments</span>
+            <div class="skill-tags">
+              <span class="tag mono"><i class="bi bi-windows"></i> windows</span>
+              <span class="tag mono"><i class="bi bi-ubuntu"></i> ubuntu</span>
+              <span class="tag mono"><i class="bi bi-pc-display"></i> omarchy</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-label="Education">
+      <span class="section-label mono">04 — education</span>
+      <div class="section-body">
+        <div class="edu-list">
+          <div class="edu-item" id="edu-jain-uni">
+            <div class="edu-header">
+              <span class="edu-inst">jain deemed-to-be-university</span>
+              <span class="edu-date mono">2024 — 2028</span>
+            </div>
+            <span class="edu-degree">bca · data analytics</span>
+            <span class="edu-status mono active">● in progress</span>
+          </div>
+          <div class="edu-item" id="edu-jain-pu">
+            <div class="edu-header">
+              <span class="edu-inst">jain pu college</span>
+              <span class="edu-date mono">2024</span>
+            </div>
+            <span class="edu-degree">pu · pcmc</span>
+            <span class="edu-cgpa mono">cgpa 8.5</span>
+          </div>
+          <div class="edu-item" id="edu-silicon">
+            <div class="edu-header">
+              <span class="edu-inst">silicon city academy</span>
+              <span class="edu-date mono">2022</span>
+            </div>
+            <span class="edu-degree">cbse · secondary education</span>
+            <span class="edu-cgpa mono">cgpa 8.7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- INTERESTS -->
+    <section id="interests" aria-label="Interests">
+      <span class="section-label mono">05 — beyond the screen</span>
+      <div class="section-body">
+        <p class="section-intro">things i do when i'm not at the terminal.</p>
+        <div class="interests-grid">
+          <div class="interest-item" id="interest-music">
+            <i class="bi bi-spotify interest-icon"></i>
+            <span class="interest-label mono">spotify</span>
+          </div>
+          <div class="interest-item" id="interest-cooking">
+            <i class="bi bi-fire interest-icon"></i>
+            <span class="interest-label mono">cooking</span>
+          </div>
+          <div class="interest-item" id="interest-walks">
+            <i class="bi bi-person-walking interest-icon"></i>
+            <span class="interest-label mono">walks</span>
+          </div>
+          <div class="interest-item" id="interest-tech">
+            <i class="bi bi-newspaper interest-icon"></i>
+            <span class="interest-label mono">tech news</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CERTIFICATES -->
+    <section id="certs" aria-label="Certificates">
+      <span class="section-label mono">06 — certificates</span>
+      <div class="section-body">
+        <p class="section-intro">workshops, courses, and credentials.</p>
+        <div class="cert-list">
+
+          <div class="cert-item" id="cert-iit">
+            <div class="cert-header">
+              <div class="cert-info">
+                <span class="cert-name">Drone Technology Workshop</span>
+                <span class="cert-issuer mono">IIT Tirupati</span>
+              </div>
+              <div class="cert-right">
+                <span class="cert-date mono">2025</span>
+                <button class="cert-view mono" id="view-cert-iit"
+                  onclick="openCert('assets/certs/iit-tirupati-drone.pdf', 'Drone Technology Workshop')">view</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-item" id="cert-coursera">
+            <div class="cert-header">
+              <div class="cert-info">
+                <span class="cert-name">Google Prompting Essentials</span>
+                <span class="cert-issuer mono">Coursera</span>
+              </div>
+              <div class="cert-right">
+                <span class="cert-date mono">2025</span>
+                <button class="cert-view mono" id="view-cert-coursera"
+                  onclick="openCert('assets/certs/coursera-cert.pdf', 'Google Prompting Essentials')">view</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more certificates here -->
+          <!-- Copy the cert-item block above for each new certificate -->
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <span class="section-label mono">07 — contact</span>
+      <div class="section-body">
+        <p>open to internships, connections, and interesting problems. bring the messy version.</p>
+
+        <div class="social-grid">
+
+          <button class="social-item" id="contact-email" title="Copy email address" data-email="saransree119@gmail.com"
+            onclick="copyEmail(this)">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="social-label mono" id="email-label">email</span>
+          </button>
+
+          <a href="https://github.com/sharanfr" class="social-item" target="_blank" rel="noopener" id="contact-github"
+            title="GitHub">
+            <i class="bi bi-github"></i>
+            <span class="social-label mono">github</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/r-sreesaran-b57a0932a" class="social-item" target="_blank" rel="noopener"
+            id="contact-linkedin" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+            <span class="social-label mono">linkedin</span>
+          </a>
+
+          <a href="https://www.instagram.com/shxran06?igsh=ZGpiMDM0Z3NwdmU0" class="social-item" target="_blank"
+            rel="noopener" id="contact-instagram" title="Instagram">
+            <i class="bi bi-instagram"></i>
+            <span class="social-label mono">instagram</span>
+          </a>
+
+          <button class="social-item" id="contact-discord" title="Copy Discord username" data-discord="shxran"
+            onclick="copyDiscord(this)">
+            <i class="bi bi-discord"></i>
+            <span class="social-label mono" id="discord-label">shxran</span>
+          </button>
+
+        </div>
+
+        <!-- Direct email row -->
+        <p class="contact-email-direct mono">
+          or just write to
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saransree119@gmail.com&su=Hey Sreesaran"
+            target="_blank" rel="noopener" class="contact-email-link">saransree119@gmail.com</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <span class="mono">r. sreesaran · bangalore</span>
+    <span class="mono footer-note">built with zero em dashes</span>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- CERT LIGHTBOX MODAL -->
+  <div id="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+    <div id="cert-modal-backdrop"></div>
+    <div id="cert-modal-box">
+      <div id="cert-modal-topbar">
+        <span class="mono" id="cert-modal-title">certificate</span>
+        <button id="cert-modal-close" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <iframe id="cert-modal-frame" src="" title="Certificate viewer"></iframe>
+    </div>
+  </div>
+
+  <!-- CURSOR DOT -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

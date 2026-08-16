@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg   { fill: #ffffff; }
+    .text { fill: #CC0000; font-family: 'Courier New', monospace; font-weight: 700; font-size: 19px; }
+    .bar  { fill: #CC0000; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #0A0A0A; }
+      .text { fill: #F0F0F0; }
+      .bar  { fill: #F0F0F0; }
+    }
+  </style>
+  <!-- background -->
+  <rect class="bg" width="32" height="32"/>
+  <!-- 1px bottom border -->
+  <rect class="bar" x="0" y="30" width="32" height="2"/>
+  <!-- "r." text -->
+  <text class="text" x="4" y="23">r.</text>
+</svg>
